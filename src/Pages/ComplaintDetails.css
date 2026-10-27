@@ -1,0 +1,139 @@
+.details-page {
+  width: 90%;
+
+  max-width: 800px;
+
+  margin: auto;
+
+  padding: 70px 0;
+}
+
+.details-card {
+  padding: 40px;
+
+  background: rgba(10, 15, 45, 0.84);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 20px;
+
+  backdrop-filter: blur(12px);
+}
+
+.details-card h1 {
+  font-size: 38px;
+
+  margin-bottom: 30px;
+}
+
+.small-title {
+  color: #9daaff;
+
+  font-size: 13px;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 10px;
+}
+
+.detail-item {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 17px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.detail-item span {
+  color: #aeb7d5;
+}
+
+.detail-item strong {
+  text-align: right;
+}
+
+.description-box {
+  margin-top: 25px;
+
+  padding: 20px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border-radius: 12px;
+}
+
+.description-box span {
+  color: #aeb7d5;
+}
+
+.description-box p {
+  margin-top: 10px;
+
+  line-height: 1.6;
+
+  color: #e1e5f5;
+}
+
+.details-buttons {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 15px;
+
+  margin-top: 30px;
+}
+
+.back-btn,
+.submit-complaint-btn {
+  padding: 12px 20px;
+
+  border-radius: 9px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+}
+
+.back-btn {
+  background: transparent;
+
+  color: white;
+
+  border: 1px solid #6974a5;
+}
+
+.submit-complaint-btn {
+  background: #6675ff;
+
+  color: white;
+
+  border: none;
+}
+
+@media (max-width: 600px) {
+
+  .details-card {
+    padding: 25px;
+  }
+
+  .detail-item {
+    flex-direction: column;
+  }
+
+  .detail-item strong {
+    text-align: left;
+  }
+
+  .details-buttons {
+    flex-direction: column;
+  }
+
+  .details-buttons button {
+    width: 100%;
+  }
+}

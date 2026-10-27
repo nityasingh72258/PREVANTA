@@ -1,0 +1,12 @@
+.footer {
+  margin-top: 60px;
+  padding: 22px;
+
+  text-align: center;
+
+  background: rgba(5, 8, 30, 0.75);
+
+  color: #bfc6e5;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

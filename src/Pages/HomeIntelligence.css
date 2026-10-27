@@ -1,0 +1,147 @@
+
+/* PREVANTA 2.0 - Smart Campus Intelligence */
+
+.intelligence-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px 24px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.intelligence-tag {
+  display: inline-block;
+  padding: 7px 16px;
+  margin-bottom: 12px;
+  color: #a5b4fc;
+  border: 1px solid #818cf8;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.intelligence-section h2 {
+  margin: 8px 0 14px;
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 800;
+}
+
+.intelligence-description {
+  max-width: 650px;
+  margin: 0 auto 35px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.intelligence-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  text-align: left;
+}
+
+.intelligence-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 260px;
+  padding: 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid rgba(129, 140, 248, 0.4);
+  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.14),
+    rgba(56, 189, 248, 0.06)
+  );
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.intelligence-card:hover {
+  transform: translateY(-7px);
+  border-color: #818cf8;
+  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.2);
+}
+
+.intelligence-card:focus-visible {
+  outline: 3px solid #818cf8;
+  outline-offset: 4px;
+}
+
+.intelligence-icon {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 20px;
+  border-radius: 17px;
+  background: rgba(129, 140, 248, 0.16);
+  font-size: 30px;
+}
+
+.intelligence-card h3 {
+  margin: 0 0 12px;
+  font-size: 23px;
+}
+
+.intelligence-card p {
+  margin: 0 0 25px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.intelligence-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+  margin-top: auto;
+  color: #818cf8;
+  font-weight: 700;
+}
+
+.intelligence-link span {
+  font-size: 22px;
+  transition: transform 0.2s ease;
+}
+
+.intelligence-card:hover .intelligence-link span {
+  transform: translateX(5px);
+}
+
+.pattern-card {
+  border-top: 3px solid #818cf8;
+}
+
+.simulator-card {
+  border-top: 3px solid #38bdf8;
+}
+
+@media (max-width: 650px) {
+  .intelligence-section {
+    margin: 30px auto;
+    padding: 25px 16px;
+  }
+
+  .intelligence-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .intelligence-card {
+    min-height: 230px;
+    padding: 24px;
+  }
+
+  .intelligence-card h3 {
+    font-size: 21px;
+  }
+}
